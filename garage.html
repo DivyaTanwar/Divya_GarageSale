@@ -1,0 +1,152 @@
+<!-- Divya_8341091 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Tanwar</title>
+    <link rel="stylesheet" href="garage.css">
+    <header class="top-header"> Assignment#2 Divya 8341091</header>
+</head>
+
+<body <header class="main-header">
+    <h1 class="store-name">Garage Sale</h1>
+    </header>
+    <section class="container">
+        <h2 class="section-header">Products</h2>
+        <div class="Products">
+            <div class="Product" id="1">
+                <span class="Product-name">Painting</span>
+                <img class="Product-image" src="/garage.images/Painting.jpg">
+                <div class="Product-details">
+                    <span class="Product-price">$9.99</span>
+                    <button onclick="add('Painting', 9.99)" class="main-button Product-button" type="button">ADD TO
+                        CART</button>
+                </div>
+            </div>
+            <div class="Product" id="2">
+                <span class="Product-name">Chair</span>
+                <img class="Product-image" src="/garage.images/Chair.jpg">
+                <div class="Product-details">
+                    <span class="Product-price">$11.99</span>
+                    <button onclick="add('Chair', 11.99)" class="main-button Product-button" type="button">ADD TO
+                        CART</button>
+                </div>
+            </div>
+            <div class="Product" id="3">
+                <span class="Product-name">Toy Horse</span>
+                <img class="Product-image" src="/garage.images/Toy Horse.jpg">
+                <div class="Product-details">
+                    <span class="Product-price">$10.99</span>
+                    <button onclick="add('Toy Horse', 10.99)" class="main-button Product-button" type="button">ADD TO
+                        CART</button>
+                </div>
+            </div>
+            <div class="Product" id="4">
+                <span class="Product-name">Tool Kit</span>
+                <img class="Product-image" src="/garage.images/Tool Kit.jpg">
+                <div class="Product-details">
+                    <span class="Product-price">$11.99</span>
+                    <button onclick="add('Tool Kit', 11.99)" class="main-button Product-button" type="button">ADD TO
+                        CART</button>
+                </div>
+            </div>
+            <div class="Product" id="5">
+                <span class="Product-name">Basket</span>
+                <img class="Product-image" src="/garage.images/Basket.jpg">
+                <div class="Product-details">
+                    <span class="Product-price">$9.99</span>
+                    <button onclick="add('Basket', 9.99)" class="main-button Product-button" type="button">ADD
+                        TO CART</button>
+                </div>
+            </div>
+    </section>
+
+    <button onclick="checkout()" class="main-button purchase-button" type="button">CHECKOUT</button>
+    <section form_container>
+        <form name="dataForm" action="" method="post" onsubmit="return processForm();">
+
+            <label for="fullName">Name : </label>
+            <input type="text" name="fullName" placeholder="Please enter your name" id="full_name">
+            <span id="error_name" style="color:red ;">*</span>
+            <br><br>
+
+            <label for="email">Email : </label>
+            <input type="email" placeholder="Enter your email here" id="email_address" name="email" required>
+            <span id="error_email" style="color:red ;">*</span>
+            <br><br>
+
+            <label for="credit_card_number">Credit Card Number : </label>
+            <input type="text" placeholder="Enter your card number here" id="credit_card_number">
+
+            <span id="error_credit_card_number" style="color:red ;">*</span>
+            <br><br>
+
+            <label for="credit card expiry date">Credit Card Expiry Date : </label>
+            <input type="text" placeholder="Enter the credit card expiry date here" id="credit_card_expiry_date" <!--
+                maxlength="5" pattern="[0-91[0-2]-[0-9][0-9]" required> -->
+            <span id="error_credit_card_expiry_date" style="color:red ;">*</span>
+            <br><br>
+
+            <label for="cvv">CVV : </label>
+            <input type="text" placeholder="Enter the CVV here" id="credit_card_cvv" maxlength="3"
+                pattern="[0-9][0-9][0-9]" required>
+            <span id="error_cvv" style="color:red ;">*</span>
+            <br><br>
+
+
+            <!-- <input type="button" value="Checkout" id="checkoutbtn"> -->
+        </form>
+    </section>
+
+    <section class="container">
+        <h2 class="section-header">Receipt</h2>
+        <h2>Garage Sale</h2>
+
+
+        <div id="mid">
+            <div class="info">
+                <h2>Contact Info</h2>
+                <p>
+                    <text id="name_print"></text></br>
+                    <text id="email_print"></text>
+                    <text id="card_print"></text>
+
+                </p>
+
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-subtotal-title">Subtotal</strong>
+                    <span class="cart-subtotal-block"><span class="dollar"></span>$<span class="number"
+                            id="subtotal-number">0</span></span>
+
+                    <strong class="cart-donation-title">Donation</strong>
+                    <span class="cart-donation-block"><span class="dollar"></span>$<span class="number"
+                            id="donation-number">0</span></span>
+
+                    <strong class="cart-tax-title">Tax</strong>
+                    <span class="cart-tax-block"><span class="dollar"></span>$<span class="number"
+                            id="tax-number">0</span></span>
+
+                    <strong class="cart-grandtotal-title">Total</strong>
+                    <span class="cart-grandtotal-block"><span class="dollar"></span>$<span class="number"
+                            id="total-number">0</span></span>
+                </div>
+
+                <p class="last_line"><strong>Thank you for your business!</strong> -->
+
+                    <footer class="main-footer">
+                        &copyDivya_8341091
+                    </footer>
+                    <script src="garage.js"></script>
+</body>
+
+</html>
